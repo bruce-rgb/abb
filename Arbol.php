@@ -38,6 +38,7 @@ class Arbol {
     public function modificarNodo(){
         
     }
+    /*
     public function buscarporValor(){
         if ($this->root != null) {
             $ap=$this->root;
@@ -46,6 +47,7 @@ class Arbol {
             }
         }
     }
+    */
     public function camino(){
         
     }
@@ -95,3 +97,4 @@ class Arbol {
         }
     }
 }
+

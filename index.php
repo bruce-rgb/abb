@@ -18,21 +18,37 @@
                 
               include_once 'Arbol.php';
               $arbol = new Arbol();
-              $arbol->agregarNodo(5);
-              $arbol->agregarNodo(4);
-              $arbol->agregarNodo(3);
-              $arbol->agregarNodo(3);
-              $arbol->agregarNodo(5);
+              $arbol->agregarNodo(5.3);
+              $arbol->agregarNodo(4.2);
+              $arbol->agregarNodo(3.9);
+              $arbol->agregarNodo(3.0);
+              $arbol->agregarNodo(5.5);
               $arbol->agregarNodo(9);
               $arbol->agregarNodo(8);
               $arbol->agregarNodo(11);
               $arbol->agregarNodo(15);
               $arbol->agregarNodo(14);
               $arbol->agregarNodo(100);
+              $arbol->agregarNodo(4);
+              $arbol->agregarNodo(5);
 
               $arbol->print();
               
-                /* include_once 'NodoBinario.php';
+              /*
+                include_once 'NodoBinario.php';
+
+                $nodo1 = new NodoBinario(10);
+                $nodo2 = new NodoBinario(9);
+                $nodo3 = new NodoBinario(11);
+                $nodo4 = new NodoBinario(5,$nodo2,$nodo1,$nodo3);
+
+                $nodo1->mostrar();
+
+
+
+
+                
+                include_once 'NodoBinario.php';
                 $nodo1 = new NodoBinario(5);
                 $nodo2 = new NodoBinario(4);
                 $nodo3 = new NodoBinario(3);
@@ -72,9 +88,9 @@
     </head>
     <body>
         <?php
-            echo $arbol->minimo()->getValor(); 
-            echo $arbol->maximo()->getValor();
-            echo $arbol->buscarporValor(8)->getValor();
+            //echo $arbol->minimo()->getValor(); 
+            //echo $arbol->maximo()->getValor();
+            //echo $arbol->buscarporValor(8)->getValor();
             
         ?> 
         <div id="chart_div"></div>

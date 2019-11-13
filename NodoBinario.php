@@ -6,18 +6,13 @@ class NodoBinario {
     private $izq;
     private $der;
     private $padre;
-    //
+    
     public function NodoBinario($valor, $izq=null, $der=null, $padre=null){
-        $this->valor = $valor; //diferente de nulo y entero, mandar thow exception o convertirlo a 0 
-        $this->izq = $this->setIzquierdo($izq); //pasarlo a getter para que el lo valide
-        $this->der = $this->setDerecho($der);
-        $this->padre = $this->setPadre($padre);
-//        if($izq != null && is_a($izq, 'NodoBinario')){
-//            $this->sig = $sig; 
-//        }
-        
+        $this->setValor($valor); //  $this->setValor($valor) diferente de nulo y entero, mandar thow exception o convertirlo a 0 
+        $this->setIzquierdo($izq); //pasarlo a getter para que el lo valide
+        $this->setDerecho($der);
+        $this->setPadre($padre);
     }
-    //
     public function setValor($valor){
         if($valor != null){
             $valor = floatval($valor); //<--- primero operacion derecha
@@ -150,8 +145,29 @@ class NodoBinario {
         }
     }
 }
-//$nodo2 = new NodoBinario(15,null,new NodoBinario(30),$nodo);
-//
-//echo $nodo->hijo();
+/*
+                $nodo1 = new NodoBinario(10);
+                $nodo2 = new NodoBinario(9);
+                $nodo3 = new NodoBinario(11);
+                $nodo4 = new NodoBinario(5,$nodo2,$nodo1,$nodo3);
+
+                echo $nodo3->hijo();
+
+                //var_dump($nodo4);
+                echo $nodo4->hijo();
+                
+
+
+                
+                $nodo = new NodoBinario(5);
+                //$nodo->setValor(10);
+                //var_dump($nodo);
+                echo $nodo->getValor();*/
+                
+                
+
+                
+
+
 
 
